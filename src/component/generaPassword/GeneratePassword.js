@@ -55,12 +55,21 @@ const GeneratePassword = () => {
   };
   const hadleNumberCheckbox = (e) => {
     setNumber(!number);
+    if (message !== "") {
+      setMessage("");
+    }
   };
   const hadleLetterCheckbox = (e) => {
     setLetter(!letter);
+    if (message !== "") {
+      setMessage("");
+    }
   };
   const hadleSymbolCheckbox = (e) => {
     setSymbol(!symbol);
+    if (message !== "") {
+      setMessage("");
+    }
   };
 
   return (
